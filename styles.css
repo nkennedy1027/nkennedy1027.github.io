@@ -1,0 +1,32 @@
+body { 
+	width: 450vw; 
+	height: 100vh;
+	overflow: hidden;
+} 
+.panel { 
+	width: 100vw; 
+	float: left; 
+	padding: 7vh;
+	text-align: center;
+} 
+ul#navbar { 
+	position: fixed; 
+	line-height: 45px; 
+	right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+	padding: 0; 
+	bottom: 0;
+	text-align: center;
+	z-index: 1000;
+} 
+ul#navbar li { 
+	display: inline; 
+	margin: 1em;
+} 
+.proj{
+	height: 30vh;
+	border: 1px solid black;
+}
+
