@@ -200,8 +200,6 @@ h3 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100%;
-	padding-top: 4vh;
 	z-index: -1;
 }
 #about-content-wrap{
