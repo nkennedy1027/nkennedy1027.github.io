@@ -1,0 +1,198 @@
+body {
+    background-color: #ffdfb6;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.layer {
+    position: absolute;
+}
+.bleed {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frame {
+    position: absolute;
+    height: 768px;
+    width: 1366px;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transform: translate(-50%,-50%);
+}
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* BACKGROUND */
+.background {
+    top: 0;
+    left: 0;
+}
+.bubbles-back, .bubbles-front {
+    position: absolute;
+    height: 100px;
+    width: 900px;
+    top: 505px;
+    left: 300px;
+}
+.bubbles-back {
+    transform: scale(.9);
+}
+.bubbles-front {
+    transform: scale(1.1);
+}
+.bubble {
+    position: absolute;
+    animation: bubble 15s infinite linear;
+}
+.mushroom {
+    animation: mushroom 5s infinite ease-in-out;
+}
+.fish-wrap {
+    position: absolute;
+    left: 400px;
+    animation: fish 5s infinite cubic-bezier(0.59, 0.29, 0.42, 0.78);
+}
+.fish {
+    position: relative;
+}
+.eye {
+    top: 200px;
+    left: 520px; 
+    transition: all 1.5s ease-out;
+}
+.drops {
+    position: absolute;
+    left: 650px;
+    width: 340px;
+    height: 250px;
+    top: 150px;
+}
+.drop {
+    height: 10px;
+    width: 3px;
+    border-radius: 50%;
+    border: 2px solid #bc5f6f; 
+    background: #a4ece6;
+    position: absolute;
+    animation: drop 7s infinite linear;
+    opacity: 0;
+}
+
+/* MIDGROUND */
+.midground {
+    bottom: -211px;
+    left: 0;
+}
+
+
+/* FOREGROUND */
+.foreground {
+    bottom: -508px;
+    left: 0;
+}
+.head {
+    top: 370px;
+    left: 130px;
+}
+.hair {
+    top: 418px;
+    left: 181px;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Fish */
+@-webkit-keyframes fish {
+    0%   { transform: rotate(1.2deg); }
+    50% { transform: rotate(-1.2deg); }
+    100% { transform: rotate(1.2deg); }
+  }
+  @-moz-keyframes fish {
+    0%   { transform: rotate(1.2deg); }
+    50% { transform: rotate(-1.2deg); }
+    100% { transform: rotate(1.2deg); }
+  }
+  @-o-keyframes fish {
+    0%   { transform: rotate(1.2deg); }
+    50% { transform: rotate(-1.2deg); }
+    100% { transform: rotate(1.2deg); }
+  }
+  @keyframes fish {
+    0%   { transform: rotate(1.2deg); }
+    50% { transform: rotate(-1.2deg); }
+    100% { transform: rotate(1.2deg); }
+  }
+
+/* Drops */
+@-webkit-keyframes drop {
+    0%   { transform: translateX(0) translateY(0) rotate(6deg); opacity: 0;}
+    20%   {opacity: 1;}
+    100% { transform: translateX(-50px) translateY(700px); }
+  }
+  @-moz-keyframes drop {
+    0%   { transform: translateX(0) translateY(0) rotate(6deg); opacity: 0;}
+    20%   {opacity: 1;}
+    100% { transform: translateX(-50px) translateY(700px); }
+  }
+  @-o-keyframes drop {
+    0%   { transform: translateX(0) translateY(0) rotate(6deg); opacity: 0;}
+    20%   {opacity: 1;}
+    100% { transform: translateX(-50px) translateY(700px); }
+  }
+  @keyframes drop {
+    0%   { transform: translateX(0) translateY(0) rotate(6deg); opacity: 0;}
+    20%   {opacity: 1;}
+    100% { transform: translateX(-50px) translateY(700px); }
+  }
+
+  /* Bubbles */
+@-webkit-keyframes bubble {
+    0%   { transform: translateX(0) translateY(0);}
+    100% { transform: translateX(50px) translateY(-700px); }
+  }
+  @-moz-keyframes bubble {
+    0%   { transform: translateX(0) translateY(0);}
+    100% { transform: translateX(50px) translateY(-700px); }
+  }
+  @-o-keyframes bubble {
+    0%   { transform: translateX(0) translateY(0);}
+    100% { transform: translateX(50px) translateY(-700px); }
+  }
+  @keyframes bubble {
+    0%   { transform: translateX(0) translateY(0);}
+    100% { transform: translateX(50px) translateY(-700px); }
+  }
+
+  /* Mushrooms */
+@-webkit-keyframes mushroom {
+    0%   { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+  }
+  @-moz-keyframes mushroom {
+    0%   { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+  }
+  @-o-keyframes mushroom {
+    0%   { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+  }
+  @keyframes mushroom {
+    0%   { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+  }
